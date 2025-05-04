@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opinex - Meu Perfil</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="y.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="y.png" alt="Logo" style="height: 30px;">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html" class="active">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+      <div class="menu-mobile-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="close-menu" id="close-menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="series.html">Séries</a>
+      <a href="top10.html">Top 10</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="critiques.html">Críticas</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="profile.html">Perfil</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+
+  <main class="profile-container">
+    <div class="profile-header">
+      <div class="profile-info">
+        <div class="profile-name-container">
+          <h1>Mendes</h1>
+          <button class="edit-profile-btn">Editar perfil</button>
+        </div>
+        <div class="profile-meta">
+          <div class="profile-meta-item">
+            <i class="fas fa-film"></i>
+            <span>127 séries avaliadas</span>
+          </div>
+          <div class="profile-meta-item">
+            <i class="fas fa-eye"></i>
+            <span>42 séries assistindo</span>
+          </div>
+          <div class="profile-meta-item">
+            <i class="fas fa-list"></i>
+            <span>85 na lista de desejos</span>
+          </div>
+          <div class="profile-meta-item">
+            <i class="fas fa-star"></i>
+            <span>Avaliação média: 8.3</span>
+          </div>
+        </div>
+        <div class="profile-bio">
+          <p>Apaixonado por séries de drama. Adoro descobrir novas histórias e compartilhar minhas opiniões. Breaking Bad e Better Call Saul são minhas séries favoritas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-tabs">
+      <button class="profile-tab active" data-tab="ratings">Avaliações</button>
+      <button class="profile-tab" data-tab="watching">Assistindo</button>
+      <button class="profile-tab" data-tab="watchlist">Lista de Desejos</button>
+      <button class="profile-tab" data-tab="reviews">Minhas Críticas</button>
+    </div>
+
+    <div class="profile-content">
+      <div class="profile-panel active" id="ratings-panel">
+        <div class="panel-header">
+          <h2>Minhas Avaliações</h2>
+          <div class="panel-filters">
+            <div class="filter-group">
+              <label>Ordenar por:</label>
+              <select class="filter-select">
+                <option>Data (mais recente)</option>
+                <option>Data (mais antiga)</option>
+                <option>Nota (maior)</option>
+                <option>Nota (menor)</option>
+                <option>Título (A-Z)</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Filtrar por:</label>
+              <select class="filter-select">
+                <option>Todos</option>
+                <option>Séries</option>
+                <option>Filmes</option>
+                <option>Nota 5★</option>
+                <option>Nota 4★+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="rated-items-grid">
+          <div class="rated-item">
+            <img src="bb2.jpg" alt="Breaking Bad" class="rated-item-image">
+            <div class="rated-item-overlay">
+              <div class="rated-item-rating">
+                <i class="fas fa-star"></i> 5.0
+              </div>
+              <div class="rated-item-date">7/05/2025</div>
+            </div>
+            <h3 class="rated-item-title">Breaking Bad</h3>
+          </div>
+
+          <div class="rated-item">
+            <img src="saul.png" alt="Better Call Saul" class="rated-item-image">
+            <div class="rated-item-overlay">
+              <div class="rated-item-rating">
+                <i class="fas fa-star"></i> 5.0
+              </div>
+              <div class="rated-item-date">7/05/2025</div>
+            </div>
+            <h3 class="rated-item-title">Better Call Saul</h3>
+          </div>
+
+          <div class="rated-item">
+            <img src="theboys.png" alt="The Boys" class="rated-item-image">
+            <div class="rated-item-overlay">
+              <div class="rated-item-rating">
+                <i class="fas fa-star"></i> 4.7
+              </div>
+              <div class="rated-item-date">07/04/2023</div>
+            </div>
+            <h3 class="rated-item-title">The Boys</h3>
+          </div>
+
+          <div class="rated-item">
+            <img src="capitao.png" alt="Capitão América: O Soldado Invernal" class="rated-item-image">
+            <div class="rated-item-overlay">
+              <div class="rated-item-rating">
+                <i class="fas fa-star"></i> 4.5
+              </div>
+              <div class="rated-item-date">07/05/2023</div>
+            </div>
+            <h3 class="rated-item-title">Capitão América: O Soldado Invernal</h3>
+          </div>
+
+          <div class="rated-item">
+            <img src="dexter.png" alt="Dexter" class="rated-item-image">
+            <div class="rated-item-overlay">
+              <div class="rated-item-rating">
+                <i class="fas fa-star"></i> 4.0
+              </div>
+              <div class="rated-item-date">09/05/2023</div>
+            </div>
+            <h3 class="rated-item-title">Dexter</h3>
+          </div>
+
+          <div class="rated-item">
+            <img src="batman.png" alt="Batman" class="rated-item-image">
+            <div class="rated-item-overlay">
+              <div class="rated-item-rating">
+                <i class="fas fa-star"></i> 4.2
+              </div>
+              <div class="rated-item-date">25/03/2023</div>
+            </div>
+            <h3 class="rated-item-title">Batman</h3>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="pagination-btn active">1</a>
+          <a href="#" class="pagination-btn">2</a>
+          <a href="#" class="pagination-btn">3</a>
+          <span class="pagination-ellipsis">...</span>
+          <a href="#" class="pagination-btn">21</a>
+          <a href="#" class="pagination-btn pagination-next">Próxima <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Informacoes</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carreiras</a>
+      </div>
+      <div class="footer-section">
+        <h4>Comunidade</h4>
+        <a href="#">Diretrizes</a>
+        <a href="#">Discussões</a>
+        <a href="#">Contribuir</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Opinex. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const profileTabs = document.querySelectorAll('.profile-tab');
+
+      profileTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+
+          profileTabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+
+          const panelId = this.getAttribute('data-tab') + '-panel';
+          document.querySelectorAll('.profile-panel').forEach(panel => {
+            panel.classList.remove('active');
+          });
+
+          const activePanel = document.getElementById(panelId);
+          if (activePanel) {
+            activePanel.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

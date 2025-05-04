@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opinex - Snowfall</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Preload de imagens importantes -->
+  <link rel="preload" as="image" href="snowfall.jpg">
+  <link rel="preload" as="image" href="y.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="y.png" alt="Logo" style="height: 30px;">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+      <div class="menu-mobile-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="close-menu" id="close-menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="series.html">Séries</a>
+      <a href="top10.html">Top 10</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="critiques.html">Críticas</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="profile.html">Perfil</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <main style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">
+    <div class="hero-series">
+      <div class="series-backdrop">
+        <img src="snowfall.jpg" alt="Snowfall">
+        <div class="series-info">
+          <h1>Snowfall</h1>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>8.4/10</span>
+          </div>
+          <p class="tagline">O início da epidemia do crack em Los Angeles</p>
+          <div class="meta">
+            <span>2017-2023</span>
+            <span>6 Temporadas</span>
+            <span>Drama, Crime</span>
+          </div>
+          <button class="cta-button"><i class="fas fa-play"></i> Trailer</button>
+          <button class="watchlist-btn"><i class="fas fa-plus"></i> Watchlist</button>
+        </div>
+      </div>
+    </div>
+    <section class="series-details">
+      <div class="overview">
+        <h2>Sinopse</h2>
+        <p>Ambientada em Los Angeles em 1983, a série segue diversos personagens cujas vidas estão destinadas a se cruzar devido ao início da epidemia de crack que mudou a cidade para sempre.</p>
+      </div>
+      <div class="cast-section">
+        <h2>Elenco Principal</h2>
+        <div class="cast-grid">
+          <div class="cast-card">
+            <img src="damson.jpg" alt="Damson Idris" style="height: 230px; object-fit: cover;">
+            <h4>Damson Idris</h4>
+            <p>Franklin Saint</p>
+          </div>
+          <div class="cast-card">
+            <img src="sergio.jpg" alt="Sergio Peris-Mencheta" style="height: 230px; object-fit: cover;">
+            <h4>Sergio Peris-Mencheta</h4>
+            <p>Gustavo Zapata</p>
+          </div>
+          <div class="cast-card">
+            <img src="carter.jpg" alt="Carter Hudson" style="height: 230px; object-fit: cover;">
+            <h4>Carter Hudson</h4>
+            <p>Teddy McDonald</p>
+          </div>
+          <div class="cast-card">
+            <img src="michael.jpg" alt="Michael Hyatt" style="height: 230px; object-fit: cover;">
+            <h4>Michael Hyatt</h4>
+            <p>Cissy Saint</p>
+          </div>
+          <div class="cast-card">
+            <img src="angela.jpg" alt="Angela Lewis" style="height: 230px; object-fit: cover;">
+            <h4>Angela Lewis</h4>
+            <p>Aunt Louie</p>
+          </div>
+          <div class="cast-card">
+            <img src="amin.jpg" alt="Amin Joseph" style="height: 230px; object-fit: cover;">
+            <h4>Amin Joseph</h4>
+            <p>Jerome Saint</p>
+          </div>
+        </div>
+      </div>
+      <div class="episodes-section">
+        <h2>Episódios</h2>
+        <div class="season-select">
+        <select>
+          <option>Temporada 5</option>
+          <option>Temporada 2</option>
+          <option>Temporada 3</option>
+          <option>Temporada 4</option>
+          <option>Temporada 1</option>
+          <option>Temporada 6</option>
+        </select>
+      </div>
+      <div class="episodes-list">
+        <div class="episode-card">
+          <img src="frank.png">
+          <div class="episode-info">
+            <h4>10. Linhas Falhas</h4>
+            <div class="rating"><i class="fas fa-star"></i> 8.7</div>
+            <p>Franklin foi dizimado. Teddy se move para garantir seu futuro. As fracturas familiares.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="critics-section">
+      <h2>Crítica Especializada</h2>
+      <div class="critics-grid">
+        <div class="critic-review">
+          <h4>IMDb</h4>
+          <div class="rating">8.4/10</div>
+          <p>"Uma série que retrata brilhantemente um período crítico da história."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Rotten Tomatoes</h4>
+          <div class="rating">8.7/10</div>
+          <p>"Narrativa poderosa e atuações convincentes."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Metacritic</h4>
+          <div class="rating">8.2/10</div>
+          <p>"Drama intenso com excelente desenvolvimento de personagens."</p>
+        </div>
+        <div class="critic-review">
+          <h4>TV Guide</h4>
+          <div class="rating">8.5/10</div>
+          <p>"Uma das séries mais subvalorizadas da televisão atual."</p>
+        </div>
+        <div class="critic-review">
+          <h4>IGN</h4>
+          <div class="rating">8.6/10</div>
+          <p>"Retrato brutal e honesto de uma época conturbada."</p>
+        </div>
+      </div>
+    </section>
+    <section class="recommendations catalog-container">
+      <h2>Recomendações</h2>
+      <div class="series-grid">
+        <div class="series-card" onclick="window.location='better-call-saul.html'" style="cursor: pointer;">
+          <img src="arcane.png" alt="Arcane" width="280" height="400" loading="lazy">
+          <h3>Arcane</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+        <div class="series-card" onclick="window.location='index.html'" style="cursor: pointer;">
+          <img src="aot.png" alt="Attack on Titan" width="280" height="400">
+          <h3>Attack on Titan</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.0</div>
+        </div>
+        <div class="series-card" onclick="window.location='clube-da-luta.html'" style="cursor: pointer;">
+          <img src="vikings.png" alt="Vikings" width="280" height="400">
+          <h3>Vikings</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+        <div class="series-card" onclick="window.location='how-i-met-your-mother.html'" style="cursor: pointer;">
+          <img src="loki.png" alt="Loki" width="280" height="400">
+          <h3>Loki</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.3</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Informacoes</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carreiras</a>
+      </div>
+      <div class="footer-section">
+        <h4>Comunidade</h4>
+        <a href="#">Diretrizes</a>
+        <a href="#">Discussões</a>
+        <a href="#">Contribuir</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Opinex. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

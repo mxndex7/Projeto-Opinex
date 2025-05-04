@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opinex - Lucifer</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Preload de imagens importantes -->
+  <link rel="preload" as="image" href="lu.png">
+  <link rel="preload" as="image" href="y.png">
+  <link rel="preload" as="image" href="tom.jpg">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="y.png" alt="Logo" style="height: 30px;">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+      <div class="menu-mobile-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="close-menu" id="close-menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="series.html">Séries</a>
+      <a href="top10.html">Top 10</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="critiques.html">Críticas</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="profile.html">Perfil</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <main style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">
+    <div class="hero-series">
+      <div class="series-backdrop">
+        <img src="lu.png" alt="Lucifer">
+        <div class="series-info">
+          <h1>Lucifer</h1>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>8.0/10</span>
+          </div>
+          <p class="tagline">O diabo mora em Los Angeles</p>
+          <div class="meta">
+            <span>2016-2021</span>
+            <span>6 Temporadas</span>
+            <span>Drama, Fantasia</span>
+          </div>
+          <button class="cta-button"><i class="fas fa-play"></i> Trailer</button>
+          <button class="watchlist-btn"><i class="fas fa-plus"></i> Watchlist</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="series-details">
+      <div class="overview">
+        <h2>Sinopse</h2>
+        <p>Entediado com a vida no inferno, Lucifer Morningstar abandona seu trono e se muda para Los Angeles, onde abre uma casa noturna e acaba se envolvendo com uma detetive de homicídios. Enquanto ajuda a resolver crimes, ele precisa lidar com problemas sobrenaturais, sua família celestial e demônios que querem levá-lo de volta ao inferno.</p>
+      </div>
+
+      <div class="cast-section">
+        <h2>Elenco Principal</h2>
+        <div class="cast-grid">
+          <div class="cast-card">
+            <img src="tom.jpg" alt="Tom Ellis" style="height: 230px; object-fit: cover;">
+            <h4>Tom Ellis</h4>
+            <p>Lucifer Morningstar</p>
+          </div>
+          <div class="cast-card">
+            <img src="lauren.jpg" alt="Lauren German" style="height: 230px; object-fit: cover;">
+            <h4>Lauren German</h4>
+            <p>Chloe Decker</p>
+          </div>
+          <div class="cast-card">
+            <img src="db.jpg" alt="D.B. Woodside" style="height: 230px; object-fit: cover;">
+            <h4>D.B. Woodside</h4>
+            <p>Amenadiel</p>
+          </div>
+          <div class="cast-card">
+            <img src="lesley.jpg" alt="Lesley-Ann Brandt" style="height: 230px; object-fit: cover;">
+            <h4>Lesley-Ann Brandt</h4>
+            <p>Mazikeen</p>
+          </div>
+          <div class="cast-card">
+            <img src="rachel.jpg" alt="Rachael Harris" style="height: 230px; object-fit: cover;">
+            <h4>Rachael Harris</h4>
+            <p>Linda Martin</p>
+          </div>
+          <div class="cast-card">
+            <img src="kevin.jpg" alt="Kevin Alejandro" style="height: 230px; object-fit: cover;">
+            <h4>Kevin Alejandro</h4>
+            <p>Dan Espinoza</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="episodes-section">
+        <h2>Episódios</h2>
+        <div class="season-select">
+          <select>
+            <option>Temporada 4</option>
+            <option>Temporada 2</option>
+            <option>Temporada 3</option>
+            <option>Temporada 1</option>
+            <option>Temporada 5</option>
+            <option>Temporada 6</option>
+          </select>
+        </div>
+        <div class="episodes-list">
+          <div class="episode-card">
+            <img src="lul.png">
+            <div class="episode-info">
+              <h4>10. Quem é o Novo Rei do Inferno?</h4>
+              <div class="rating"><i class="fas fa-star"></i> 9.6</div>
+              <p>Com demônios assassinos à solta em Los Angeles, cabe a Lúcifer controlar o caos e proteger os que mais se preocupam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="critics-section">
+      <h2>Crítica Especializada</h2>
+      <div class="critics-grid">
+        <div class="critic-review">
+          <h4>IMDb</h4>
+          <div class="rating">8.1/10</div>
+          <p>"Uma série que mistura humor e drama de forma única."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Rotten Tomatoes</h4>
+          <div class="rating">8.5/10</div>
+          <p>"Tom Ellis brilha como Lucifer Morningstar."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Metacritic</h4>
+          <div class="rating">8.0/10</div>
+          <p>"Entretenimento sólido com um elenco carismático."</p>
+        </div>
+        <div class="critic-review">
+          <h4>TV Guide</h4>
+          <div class="rating">8.3/10</div>
+          <p>"Uma abordagem refrescante do gênero sobrenatural."</p>
+        </div>
+        <div class="critic-review">
+          <h4>IGN</h4>
+          <div class="rating">8.2/10</div>
+          <p>"Mistura bem-sucedida de procedural policial com elementos fantásticos."</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommendations catalog-container">
+      <h2>Recomendações</h2>
+      <div class="series-grid">
+        <div class="series-card" onclick="window.location='better-call-saul.html'" style="cursor: pointer;">
+          <img src="bluelock.png" alt="Blue Lock" width="280" height="400" loading="lazy">
+          <h3>Blue Lock</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+        <div class="series-card" onclick="window.location='snowfall.html'" style="cursor: pointer;">
+          <img src="got.png" alt="Game of Thrones" width="280" height="400" loading="lazy">
+          <h3>Game of Thrones</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.4</div>
+        </div>
+        <div class="series-card" onclick="window.location='clube-da-luta.html'" style="cursor: pointer;">
+          <img src="rambo.png" alt="Rambo: Até o Fim" width="280" height="400" loading="lazy">
+          <h3>Rambo: Até o Fim</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+        <div class="series-card" onclick="window.location='how-i-met-your-mother.html'" style="cursor: pointer;">
+          <img src="batman.png" alt="Batman" width="280" height="400" loading="lazy">
+          <h3>Batman</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.3</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Informacoes</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carreiras</a>
+      </div>
+      <div class="footer-section">
+        <h4>Comunidade</h4>
+        <a href="#">Diretrizes</a>
+        <a href="#">Discussões</a>
+        <a href="#">Contribuir</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Opinex. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

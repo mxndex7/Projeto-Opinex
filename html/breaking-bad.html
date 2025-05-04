@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opinex - Breaking Bad</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="c.jpg">
+  <link rel="preload" as="image" href="y.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="y.png" alt="Logo" style="height: 30px;">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+      <div class="menu-mobile-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="close-menu" id="close-menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="series.html">Séries</a>
+      <a href="top10.html">Top 10</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="critiques.html">Críticas</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="profile.html">Perfil</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-series">
+      <div class="series-backdrop">
+        <img src="c.jpg" alt="Breaking Bad">
+        <div class="series-info">
+          <h1>Breaking Bad</h1>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>9.5/10</span>
+          </div>
+          <p class="tagline">Professor de química se torna império do crime</p>
+          <div class="meta">
+            <span>2008-2013</span>
+            <span>5 Temporadas</span>
+            <span>Drama</span>
+          </div>
+          <button class="cta-button"><i class="fas fa-play"></i> Trailer</button>
+          <button class="watchlist-btn"><i class="fas fa-plus"></i> Watchlist</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="series-details">
+      <div class="overview">
+        <h2>Sinopse</h2>
+        <p>Walter White, um professor de química do ensino médio em Albuquerque, descobre que tem câncer terminal. Para garantir o futuro financeiro de sua família, ele se alia a um ex-aluno, Jesse Pinkman, e começa a fabricar e vender metanfetaminas. O que começa como uma decisão desesperada logo o leva a uma espiral de criminalidade, onde ele se transforma de um simples homem desesperado em um poderoso e implacável "Heisenberg", enfrentando as consequências de suas escolhas.</p>
+      </div>
+
+      <div class="cast-section">
+        <h2>Elenco Principal</h2>
+        <div class="cast-grid">
+          <div class="cast-card">
+            <img src="lxp.png" alt="Bryan Cranston" style="height: 230px; object-fit: cover;">
+            <h4>Bryan Cranston</h4>
+            <p>Walter White</p>
+          </div>
+          <div class="cast-card">
+            <img src="jessee.jpg" alt="Aaron Paul" style="height: 230px; object-fit: cover;">
+            <h4>Aaron Paul</h4>
+            <p>Jesse Pinkman</p>
+          </div>
+          <div class="cast-card">
+            <img src="hank.jpg" alt="Dean Norris" style="height: 230px; object-fit: cover;">
+            <h4>Dean Norris</h4>
+            <p>Hank Schrader</p>
+          </div>
+          <div class="cast-card">
+            <img src="gus.jpg" alt="Giancarlo Esposito" style="height: 230px; object-fit: cover;">
+            <h4>Giancarlo Esposito</h4>
+            <p>Gus Fring</p>
+          </div>
+          <div class="cast-card">
+            <img src="sauls.png" alt="Bob Odenkirk" style="height: 230px; object-fit: cover;">
+            <h4>Bob Odenkirk</h4>
+            <p>Saul Goodman</p>
+          </div>
+          <div class="cast-card">
+            <img src="skyler.png" alt="Anna Gunn" style="height: 230px; object-fit: cover;">
+            <h4>Anna Gunn</h4>
+            <p>Skyler White</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="episodes-section">
+        <h2>Episódios</h2>
+        <div class="season-select">
+          <select>
+            <option>Temporada 5</option>
+            <option>Temporada 2</option>
+            <option>Temporada 3</option>
+            <option>Temporada 4</option>
+            <option>Temporada 1</option>
+          </select>
+        </div>
+        <div class="episodes-list">
+          <div class="episode-card">
+            <img src="ozymandias.png">
+            <div class="episode-info">
+              <h4>14. Ozymandias</h4>
+              <div class="rating"><i class="fas fa-star"></i> 10.0</div>
+              <p>Todos precisam lidar com mudanças radicais</p>
+              <div class="read-more-btn" onclick="window.location='critique-ozymandias.html'">Ler crítica completa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="critics-section">
+      <h2>Crítica Especializada</h2>
+      <div class="critics-grid">
+        <div class="critic-review">
+          <h4>IMDb</h4>
+          <div class="rating">9.5/10</div>
+          <p>"Uma das melhores séries já produzidas na história da televisão."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Rotten Tomatoes</h4>
+          <div class="rating">9.6/10</div>
+          <p>"Obra-prima do drama televisivo moderno."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Metacritic</h4>
+          <div class="rating">9.4/10</div>
+          <p>"Breaking Bad redefine os limites da narrativa televisiva."</p>
+        </div>
+        <div class="critic-review">
+          <h4>TV Guide</h4>
+          <div class="rating">9.7/10</div>
+          <p>"Uma jornada inesquecível de transformação moral."</p>
+        </div>
+        <div class="critic-review">
+          <h4>IGN</h4>
+          <div class="rating">9.8/10</div>
+          <p>"Perfeição narrativa do início ao fim."</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="recommendations catalog-container">
+      <h2>Recomendações</h2>
+      <div class="series-grid">
+        <div class="series-card" onclick="window.location='better-call-saul.html'" style="cursor: pointer;">
+          <img src="saul.png" alt="Better Call Saul" width="280" height="400" loading="lazy">
+          <h3>Better Call Saul</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+        <div class="series-card" onclick="window.location='lucifer.html'" style="cursor: pointer;">
+          <img src="lu.jpg" alt="Lucifer" width="280" height="400">
+          <h3>Lucifer</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.0</div>
+        </div>
+        <div class="series-card" onclick="window.location='snowfall.html'" style="cursor: pointer;">
+          <img src="sf.png" alt="Snowfall" width="280" height="400">
+          <h3>Snowfall</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.4</div>
+        </div>
+        <div class="series-card" onclick="window.location='clube-da-luta.html'" style="cursor: pointer;">
+          <img src="cl.png" alt="Clube da luta" width="280" height="400">
+          <h3>Clube da luta</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comments-section">
+      <h2>Comentários</h2>
+      <div class="comment-form">
+        <textarea placeholder="Deixe seu comentário..."></textarea>
+        <button>Enviar</button>
+      </div>
+      <div class="comments-list">
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">João Silva</span>
+            <span class="comment-date">2 dias atrás</span>
+          </div>
+          <p>Melhor série que já assisti! A transformação do Walter White é incrível. Bryan Cranston mereceu todos os Emmys que ganhou.</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '43' : '42'">
+              <i class="fas fa-heart"></i> <span class="like-count">42</span>
+            </button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">Patricia Almeida</span>
+            <span class="comment-date">4 dias atrás</span>
+          </div>
+          <p>O episódio Ozymandias é simplesmente o melhor episódio de TV que já vi. A direção, a atuação, o roteiro... tudo perfeito!</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '29' : '28'">
+              <i class="fas fa-heart"></i> <span class="like-count">28</span>
+            </button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">Lucas Gomes</span>
+            <span class="comment-date">1 semana atrás</span>
+          </div>
+          <p>Gus Fring é o melhor vilão já criado para a TV. Giancarlo Esposito entrega uma performance assustadoramente calma e calculista.</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '37' : '36'">
+              <i class="fas fa-heart"></i> <span class="like-count">36</span>
+            </button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">Fernanda Costa</span>
+            <span class="comment-date">2 semanas atrás</span>
+          </div>
+          <p>Jesse Pinkman tem o arco de personagem mais emocionante da série. Aaron Paul consegue transmitir tanto com apenas um olhar.</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '19' : '18'">
+              <i class="fas fa-heart"></i> <span class="like-count">18</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Informacoes</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carreiras</a>
+      </div>
+      <div class="footer-section">
+        <h4>Comunidade</h4>
+        <a href="#">Diretrizes</a>
+        <a href="#">Discussões</a>
+        <a href="#">Contribuir</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Opinex. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

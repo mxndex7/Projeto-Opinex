@@ -1,0 +1,298 @@
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opinex</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="j.png">
+  <link rel="preload" as="image" href="y.png">
+  <link rel="preload" as="image" href="sauls.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="y.png" alt="Logo" style="height: 30px;">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+    </nav>
+  </header>
+  <main style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">
+    <div class="hero-series">
+      <div class="series-backdrop">
+        <img src="j.png" alt="Breaking Bad">
+        <div class="series-info">
+          <h1>Better Call Saul</h1>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>8.9/10</span>
+          </div>
+          <div class="user-rating-container">
+          
+          </div>
+          <p class="tagline">O advogado de Breaking bad nao é santo</p>
+          <div class="meta">
+            <span>2015-2022</span>
+            <span>6 Temporadas</span>
+            <span>Drama</span>
+          </div>
+          <button class="cta-button trailer-btn" onclick="playTrailer()"><i class="fas fa-play"></i> Trailer</button>
+          <button class="watchlist-btn"><i class="fas fa-plus"></i> Watchlist</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="trailerModal" class="modal">
+      <div class="modal-content">
+        <video width="100%" autoplay muted>
+          <source src="saulvid.mp4" type="video/mp4">
+          <source src="saulvid.mov" type="video/mov">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <section class="series-details">
+      <div class="overview">
+        <h2>Sinopse</h2>
+        <p>Prequela de Breaking Bad, Better Call Saul foca na transformação de Jimmy McGill, um advogado com um passado sombrio e cheio de fracassos, na figura moralmente ambígua de Saul Goodman, o advogado de criminosos. A série explora a luta de Jimmy para equilibrar sua ética com sua ambição, ao mesmo tempo em que mergulha em um mundo de corrupção e intriga, com personagens complexos e reviravoltas que preparam o terreno para os eventos que se desdobram em Breaking Bad.</p>
+      </div>
+      <div class="cast-section">
+        <h2>Elenco Principal</h2>
+        <div class="cast-grid">
+          <div class="cast-card">
+            <img src="sauls.png" alt="Bob Odenkirk" style="height: 230px; object-fit: cover; filter: grayscale(100%); transition: all 0.4s ease;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+            <h4>Bob Odenkirk</h4>
+            <p>Jimmy McGill/Saul Goodman</p>
+          </div>
+          <div class="cast-card">
+            <img src="kim.png" alt="Rhea Seehorn" style="height: 230px; object-fit: cover; filter: grayscale(100%); transition: all 0.4s ease;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+            <h4>Rhea Seehorn</h4>
+            <p>Kim Wexler</p>
+          </div>
+          <div class="cast-card">
+            <img src="mike.png" alt="Jonathan Banks" style="height: 230px; object-fit: cover; filter: grayscale(100%); transition: all 0.4s ease;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+            <h4>Jonathan Banks</h4>
+            <p>Mike Ehrmantraut</p>
+          </div>
+          <div class="cast-card">
+            <img src="gus.jpg" alt="Giancarlo Esposito" style="height: 230px; object-fit: cover; filter: grayscale(100%); transition: all 0.4s ease;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+            <h4>Giancarlo Esposito</h4>
+            <p>Gus Fring</p>
+          </div>
+          <div class="cast-card">
+            <img src="chuck.png" alt="Michael McKean" style="height: 230px; object-fit: cover; filter: grayscale(100%); transition: all 0.4s ease;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+            <h4>Michael McKean</h4>
+            <p>Chuck McGill</p>
+          </div>
+          <div class="cast-card">
+            <img src="howard.png" alt="Patrick Fabian" style="height: 230px; object-fit: cover; filter: grayscale(100%); transition: all 0.4s ease;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+            <h4>Patrick Fabian</h4>
+            <p>Howard Hamlin</p>
+          </div>
+        </div>
+      </div>
+      <div class="episodes-section">
+        <h2>Episódios</h2>
+        <div class="season-select">
+          <select>
+            <option>Temporada 6</option>
+            <option>Temporada 2</option>
+            <option>Temporada 3</option>
+            <option>Temporada 4</option>
+            <option>Temporada 5</option>
+            <option>Temporada 1</option>
+          </select>
+        </div>
+        <div class="episodes-list">
+          <div class="episode-card">
+            <img src="lalo.png">
+            <div class="episode-info">
+              <h4>7. Plano e Execução</h4>
+              <div class="rating"><i class="fas fa-star"></i> 9.9</div>
+              <p>Lalo fica de olho no proximo alvo, Kim e Jimmy sao surpreendidos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="critics-section">
+      <h2>Crítica Especializada</h2>
+      <div class="critics-grid">
+        <div class="critic-review">
+          <h4>IMDb</h4>
+          <div class="rating">8.9/10</div>
+          <p>"Uma obra-prima que se iguala a Breaking Bad em qualidade."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Rotten Tomatoes</h4>
+          <div class="rating">9.8/10</div>
+          <p>"Brilhante do início ao fim, com atuações impecáveis."</p>
+        </div>
+        <div class="critic-review">
+          <h4>Metacritic</h4>
+          <div class="rating">9.2/10</div>
+          <p>"Uma das melhores séries já produzidas."</p>
+        </div>
+        <div class="critic-review">
+          <h4>TV Guide</h4>
+          <div class="rating">9.5/10</div>
+          <p>"Narrativa excepcional e desenvolvimento de personagem magistral."</p>
+        </div>
+        <div class="critic-review">
+          <h4>IGN</h4>
+          <div class="rating">9.0/10</div>
+          <p>"Superior à sua série original em vários aspectos."</p>
+        </div>
+      </div>
+    </section>
+    <section class="recommendations catalog-container">
+      <h2>Recomendações</h2>
+      <div class="series-grid">
+        <div class="series-card" onclick="window.location='snowfall.html'" style="cursor: pointer;">
+          <img src="demolidor.png" alt="Demolidor" width="280" height="400" loading="lazy">
+          <h3>Demolidor</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.4</div>
+        </div>
+        <div class="series-card" onclick="window.location='lucifer.html'" style="cursor: pointer;">
+          <img src="suits.png" alt="Suits" width="280" height="400" loading="lazy">
+          <h3>Suits</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.0</div>
+        </div>
+        <div class="series-card" onclick="window.location='clube-da-luta.html'" style="cursor: pointer;">
+          <img src="superman.png" alt="Homem de Aço" width="280" height="400" loading="lazy">
+          <h3>Homem de Aço</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+        <div class="series-card" onclick="window.location='how-i-met-your-mother.html'" style="cursor: pointer;">
+          <img src="joker.png" alt="Coringa" width="280" height="400" loading="lazy">
+          <h3>Coringa</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.3</div>
+        </div>
+      </div>
+    </section>
+    <section class="comments-section">
+      <h2>Comentários</h2>
+      <div class="comment-form">
+        <textarea placeholder="Deixe seu comentário..."></textarea>
+        <button>Enviar</button>
+      </div>
+      <div class="comments-list">
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">Marcos Souza</span>
+            <span class="comment-date">2 dias atrás</span>
+          </div>
+          <p>Better Call Saul conseguiu o impossível: ser tão boa quanto Breaking Bad, mas com um ritmo e tom completamente diferentes.</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '46' : '45'">
+              <i class="fas fa-heart"></i> <span class="like-count">45</span>
+            </button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">Carla Mendonça</span>
+            <span class="comment-date">5 dias atrás</span>
+          </div>
+          <p>Rhea Seehorn como Kim Wexler entrega uma das melhores atuações que já vi. Criminoso ela não ter ganho um Emmy!</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '39' : '38'">
+              <i class="fas fa-heart"></i> <span class="like-count">38</span>
+            </button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">Rodrigo Lima</span>
+            <span class="comment-date">1 semana atrás</span>
+          </div>
+          <p>A cinematografia desta série é incomparável. Cada quadro parece uma pintura, e as escolhas de direção são sempre surpreendentes.</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '29' : '28'">
+              <i class="fas fa-heart"></i> <span class="like-count">28</span>
+            </button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <span class="comment-author">Juliana Freitas</span>
+            <span class="comment-date">3 semanas atrás</span>
+          </div>
+          <p>A última temporada foi um dos melhores finais de série que já vi. O arco da história fechou perfeitamente tanto para BCS quanto para BB.</p>
+          <div class="comment-actions">
+            <button class="like-button" onclick="this.classList.toggle('liked'); this.querySelector('.like-count').textContent = this.classList.contains('liked') ? '33' : '32'">
+              <i class="fas fa-heart"></i> <span class="like-count">32</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Informacoes</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carreiras</a>
+      </div>
+      <div class="footer-section">
+        <h4>Comunidade</h4>
+        <a href="#">Diretrizes</a>
+        <a href="#">Discussões</a>
+        <a href="#">Contribuir</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Opinex. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+      function playTrailer() {
+        const modal = document.getElementById('trailerModal');
+        const video = document.querySelector('#trailerModal video');
+        modal.style.display = 'block';
+        setTimeout(() => modal.classList.add('fade-in'), 10);
+        video.muted = false;
+        video.play();
+
+        video.addEventListener('ended', function() {
+          modal.classList.remove('fade-in');
+          setTimeout(() => {
+            modal.style.display = 'none';
+            video.pause();
+          }, 500);
+        });
+      }
+
+      document.querySelector('#trailerModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.remove('fade-in');
+          setTimeout(() => {
+            this.style.display = 'none';
+            document.querySelector('#trailerModal video').pause();
+          }, 500);
+        }
+      });
+    </script>
+</body>
+</html>

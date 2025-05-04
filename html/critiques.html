@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opinex - Críticas Especializadas</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="preload" as="image" href="y.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="y.png" alt="Logo" style="height: 30px;">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html" class="active">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+      <div class="menu-mobile-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="close-menu" id="close-menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="series.html">Séries</a>
+      <a href="top10.html">Top 10</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="critiques.html">Críticas</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="profile.html">Perfil</a>
+      <a href="login.html">Login</a>
+    </div>
+    <main>
+      <section class="ranking-header">
+        <h1>Catálogo de Crítica</h1>
+        <p>Críticas Profissionais para visualização</p>
+      </section>
+  </header>
+
+  <main class="critiques-container">
+
+    <div class="critiques-filters">
+      <button class="filter-btn active">Todas</button>
+      <button class="filter-btn">Séries</button>
+      <button class="filter-btn">Filmes</button>
+      <button class="filter-btn">Recentes</button>
+      <button class="filter-btn">Populares</button>
+    </div>
+
+    <div class="critiques-list">
+      <article class="critique-card">
+        <div class="critique-header">
+          <img src="heisenberg.png" alt="Breaking Bad" class="critique-image">
+          <div class="critique-meta">
+            <h2>Breaking Bad: Transformação de Walter White para Heisenberg</h2>
+            <div class="critique-info">
+              <span class="critique-author">Por Guilherme Mendes</span>
+              <span class="critique-date">7 de Maio, 2025</span>
+              <span class="critique-category">Série</span>
+            </div>
+          </div>
+        </div>
+        <div class="critique-content">
+          <p>Breaking Bad é uma obra-prima da televisão contemporânea que transcende o meio e se estabelece como uma das maiores narrativas já contadas. A transformação de Walter White de um professor de química frustrado para um império do crime é um estudo de personagem sem paralelos...</p>
+          <div class="critique-rating">
+            <span class="rating-label">Nota Final:</span>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>9.5/10</span>
+            </div>
+          </div>
+          <div class="read-more-btn" onclick="window.location='critique-breaking-bad.html'">Ler crítica completa</div>
+        </div>
+      </article>
+
+      <article class="critique-card">
+        <div class="critique-header">
+          <img src="salamanca.png" alt="Better Call Saul" class="critique-image">
+          <div class="critique-meta">
+            <h2>Better Call Saul: Lalo Salamanca como antagonista</h2>
+            <div class="critique-info">
+              <span class="critique-author">Por Guilherme Mendes</span>
+              <span class="critique-date">07 de Maio, 2025</span>
+              <span class="critique-category">Série</span>
+            </div>
+          </div>
+        </div>
+        <div class="critique-content">
+          <p>Lalo Salamanca surge como um dos antagonistas mais memoráveis do universo Breaking Bad. Com seu carisma perturbador e inteligência afiada, Lalo representa uma ameaça que combina charm latino-americano com uma brutalidade calculista. Tony Dalton entrega uma performance magnética, criando um vilão que sorri enquanto planeja sua vingança, transformando cada cena em um exercício de tensão constante...</p>
+          <div class="critique-rating">
+            <span class="rating-label">Nota Final:</span>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>9.4/10</span>
+            </div>
+          </div>
+          <a href="critique-better-call-saul.html" class="read-more-btn">Ler crítica completa</a>
+        </div>
+      </article>
+
+      <article class="critique-card">
+        <div class="critique-header">
+          <img src="attack.jpg" alt="Attack on Titan" class="critique-image">
+          <div class="critique-meta">
+            <h2>Attack on Titan: Eren Yeager, bom ou mal?</h2>
+            <div class="critique-info">
+              <span class="critique-author">Guilherme Mendes</span>
+              <span class="critique-date">7 de Maio, 2025</span>
+              <span class="critique-category">Série</span>
+            </div>
+          </div>
+        </div>
+        <div class="critique-content">
+          <p>A jornada de Eren Yeager em Attack on Titan desafia nossa percepção binária de moralidade. De um jovem idealista que jurou exterminar todos os titãs, ele se transforma em alguém disposto a sacrificar a humanidade pela liberdade de seu povo. Suas ações extremas no Rumbling levantam questões profundas: pode um genocídio ser justificável? O trauma e a desesperança podem transformar qualquer pessoa em monstro? Hajime Isayama nos força a confrontar o desconforto de não haver respostas simples...</p>
+          <div class="critique-rating">
+            <span class="rating-label">Nota Final:</span>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>9.8/10</span>
+            </div>
+          </div>
+          <a href="critique-clube-da-luta.html" class="read-more-btn">Ler crítica completa</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="pagination-btn active">1</a>
+      <a href="#" class="pagination-btn">2</a>
+      <a href="#" class="pagination-btn">3</a>
+      <span class="pagination-ellipsis">...</span>
+      <a href="#" class="pagination-btn">10</a>
+      <a href="#" class="pagination-btn pagination-next">Próxima <i class="fas fa-chevron-right"></i></a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Informacoes</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carreiras</a>
+      </div>
+      <div class="footer-section">
+        <h4>Comunidade</h4>
+        <a href="#">Diretrizes</a>
+        <a href="#">Discussões</a>
+        <a href="#">Contribuir</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Opinex. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opinex - Categorias</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="y.png" alt="Logo" style="height: 50px;">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="categories-container">
+    <h1>Categorias</h1>
+    <div class="genre-selector">
+      <button class="genre-btn active">Todos</button>
+      <button class="genre-btn">Drama</button>
+      <button class="genre-btn">Comédia</button>
+      <button class="genre-btn">Ação</button>
+      <button class="genre-btn">Ficção Científica</button>
+      <button class="genre-btn">Terror</button>
+    </div>
+
+    <div class="series-grid">
+      <div class="series-card" onclick="window.location='breaking-bad.html'" style="cursor: pointer;">
+        <img src="bb2.jpg" alt="Breaking Bad">
+        <h3>Breaking Bad</h3>
+        <div class="rating"><i class="fas fa-star"></i> 9.5</div>
+        <span class="genre">Drama</span>
+      </div>
+      <div class="series-card" onclick="window.location='better-call-saul.html'" style="cursor: pointer;">
+        <img src="saul.png" alt="Better Call Saul">
+        <h3>Better Call Saul</h3>
+        <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        <span class="genre">Drama</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Informacoes</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carreiras</a>
+      </div>
+      <div class="footer-section">
+        <h4>Comunidade</h4>
+        <a href="#">Diretrizes</a>
+        <a href="#">Discussões</a>
+        <a href="#">Contribuir</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Opinex. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

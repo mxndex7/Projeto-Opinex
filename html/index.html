@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#000000">
+  <title>CineFlix</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="../images/videos/y.png" alt="Logo" style="height: 30px;">
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="top10.html">Top 10</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="critiques.html">Críticas</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="profile.html">Perfil</a>
+        <a href="login.html" class="nav-login-btn">Login</a>
+      </div>
+      <div class="menu-mobile-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="close-menu" id="close-menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <a href="index.html" class="active">Home</a>
+      <a href="series.html">Séries</a>
+      <a href="top10.html">Top 10</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="critiques.html">Críticas</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="profile.html">Perfil</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="series-backdrop">
+        <img src="../images/videos/fundo.jpg" alt="Hero Image">
+        <div class="series-info">
+          <h2>Bem-vindo ao CineFlix</h2>
+          <p>Assista seus filmes e séries favoritas!</p>
+          <button class="btn">Explore Agora</button>
+        </div>
+      </div>
+    </section>
+    <section class="series-section">
+      <h2>Séries Recomendadas</h2>
+      <div class="series-grid">
+        <div class="series-card" onclick="window.location='breaking-bad.html'" style="cursor: pointer;">
+          <img src="../images/videos/bb2.jpg" alt="Breaking Bad" width="280" height="400">
+          <h3>Breaking Bad</h3>
+          <div class="rating"><i class="fas fa-star"></i> 9.5</div>
+        </div>
+        <div class="series-card" onclick="window.location='better-call-saul.html'" style="cursor: pointer;">
+          <img src="../images/videos/saul.png" alt="Better Call Saul" width="280" height="400">
+          <h3>Better Call Saul</h3>
+          <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+        </div>
+        <div class="series-card">
+          <img src="../images/videos/got.png" alt="Game of Thrones" width="280" height="400">
+          <h3>Game of Thrones</h3>
+          <div class="rating"><i class="fas fa-star"></i> 9.5</div>
+        </div>
+        <div class="series-card">
+          <img src="../images/videos/joker.png" alt="Coringa" width="280" height="400">
+          <h3>Coringa</h3>
+          <div class="rating"><i class="fas fa-star"></i> 9.2</div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-section">
+      <h2>Críticas Recentes</h2>
+      <div class="reviews-grid">
+        <div class="review-card" onclick="window.location='critique-breaking-bad.html'">
+          <img src="../images/videos/heisenberg.png" alt="Breaking Bad">
+          <div class="review-content">
+            <h3>Breaking Bad: A Metamorfose de Walter White</h3>
+            <p>A jornada do professor de química ao império do crime é uma obra-prima da televisão...</p>
+            <div class="review-meta">
+              <span class="review-author">Guilherme Mendes</span>
+              <div class="rating"><i class="fas fa-star"></i> 9.5</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" onclick="window.location='critique-ozymandias.html'">
+          <img src="../images/videos/ozy.png" alt="Ozymandias">
+          <div class="review-content">
+            <h3>Ozymandias: O Episódio Mais Impactante de Breaking Bad</h3>
+            <p>Uma análise profunda do icônico episódio Ozymandias...</p>
+            <div class="review-meta">
+              <span class="review-author">Maria Silva</span>
+              <div class="rating"><i class="fas fa-star"></i> 9.8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="top10-section">
+      <h2>Top 10 Séries</h2>
+      <div class="top10-grid">
+        <div class="top10-preview-item">
+          <span class="rank">1</span>
+          <img src="../images/videos/bb2.jpg" alt="Breaking Bad">
+          <div class="preview-info">
+            <h3>Breaking Bad</h3>
+            <div class="rating"><i class="fas fa-star"></i> 9.5</div>
+          </div>
+        </div>
+        <div class="top10-preview-item">
+          <span class="rank">2</span>
+          <img src="../images/videos/saul.png" alt="Better Call Saul">
+          <div class="preview-info">
+            <h3>Better Call Saul</h3>
+            <div class="rating"><i class="fas fa-star"></i> 8.9</div>
+          </div>
+        </div>
+        <div class="top10-preview-item">
+          <span class="rank">3</span>
+          <img src="../images/videos/aot.png" alt="Attack on Titan">
+          <div class="preview-info">
+            <h3>Attack on Titan</h3>
+            <div class="rating"><i class="fas fa-star"></i> 9.0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 CineFlix. Todos os direitos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
